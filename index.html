@@ -447,3 +447,29 @@
       <i class="fa-solid fa-phone text-amber-400"></i> Call
     </a>
     <a href="
+function openDemoModal(courseName = '') {
+  const modal = document.getElementById('demoModal');
+  if (modal) {
+    modal.classList.remove('hidden');
+    modal.style.display = 'flex';
+  }
+  if (courseName) {
+    const select = document.getElementById('modal-course');
+    if (select) {
+      for (let i = 0; i < select.options.length; i++) {
+        if (select.options[i].text.includes(courseName) || select.options[i].value.includes(courseName)) {
+          select.selectedIndex = i;
+          break;
+        }
+      }
+    }
+  }
+}
+
+function closeDemoModal() {
+  const modal = document.getElementById('demoModal');
+  if (modal) {
+    modal.classList.add('hidden');
+    modal.style.display = 'none';
+  }
+}
