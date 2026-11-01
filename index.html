@@ -447,3 +447,73 @@
       <i class="fa-solid fa-phone text-amber-400"></i> Call
     </a>
     <a href="
+      <!-- JavaScript Logic -->
+  <script>
+    function switchTab(category) {
+      document.querySelectorAll('.tab-btn').forEach(btn => {
+        btn.classList.remove('bg-slate-900', 'text-white');
+        btn.classList.add('bg-slate-100', 'text-slate-600');
+      });
+      const activeBtn = document.getElementById('tab-' + category);
+      if (activeBtn) {
+        activeBtn.classList.remove('bg-slate-100', 'text-slate-600');
+        activeBtn.classList.add('bg-slate-900', 'text-white');
+      }
+      document.querySelectorAll('.course-card').forEach(card => {
+        if (category === 'all' || card.classList.contains(category)) {
+          card.classList.remove('hidden');
+        } else {
+          card.classList.add('hidden');
+        }
+      });
+    }
+
+    function openDemoModal(courseName = '') {
+      const modal = document.getElementById('demoModal');
+      if (modal) {
+        modal.classList.remove('hidden');
+        modal.style.display = 'flex';
+      }
+      if (courseName) {
+        const select = document.getElementById('modal-course');
+        if (select) {
+          for (let i = 0; i < select.options.length; i++) {
+            if (select.options[i].text.includes(courseName) || select.options[i].value.includes(courseName)) {
+              select.selectedIndex = i;
+              break;
+            }
+          }
+        }
+      }
+    }
+
+    function closeDemoModal() {
+      const modal = document.getElementById('demoModal');
+      if (modal) {
+        modal.classList.add('hidden');
+        modal.style.display = 'none';
+      }
+    }
+
+    function handleDemoSubmit(e, source) {
+      e.preventDefault();
+      let name, phone, course;
+      if (source === 'hero') {
+        name = document.getElementById('hero-student-name').value;
+        phone = document.getElementById('hero-parent-phone').value;
+        const cls = document.getElementById('hero-student-class').value;
+        const board = document.getElementById('hero-student-board').value;
+        course = `${cls} (${board})`;
+      } else {
+        name = document.getElementById('modal-student-name').value;
+        phone = document.getElementById('modal-parent-phone').value;
+        course = document.getElementById('modal-course').value;
+      }
+
+      const message = `Hello SharpVE Gurukull! I would like to book a Free 2-Day Demo Class.%0A%0A*Student Name:* ${encodeURIComponent(name)}%0A*Parent Phone:* ${phone}%0A*Selected Batch:* ${encodeURIComponent(course)}`;
+      window.open(`https://wa.me/917851062121?text=${message}`, '_blank');
+      if (source === 'modal') closeDemoModal();
+    }
+  </script>
+</body>
+</html>
