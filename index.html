@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SharpVE Gurukull | Premier Coaching Institute in Jaipur (Class 6-12)</title>
+  <meta name="description" content="SharpVE Gurukull Jaipur - High-impact coaching for Classes 6th-12th (CBSE & RBSE). Commerce & PCM/PCB specialized batches, personal mentoring & small batches since 2015.">
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- FontAwesome Icons CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <!-- Google Fonts: Inter & Outfit -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@500;600;700;800&display=swap" rel="stylesheet">
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              navy: '#0F1E36',
+              maroon: '#800020',
+              gold: '#D97706',
+              light: '#F8FAFC',
+              accent: '#2563EB'
+            }
+          },
+          fontFamily: {
+            heading: ['Outfit', 'sans-serif'],
+            body: ['Inter', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    body { font-family: 'Inter', sans-serif; }
+    h1, h2, h3, h4, .brand-font { font-family: 'Outfit', sans-serif; }
+  </style>
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased selection:bg-amber-100 selection:text-amber-900 pb-16 md:pb-0">
+
+  <!-- Top Announcement Bar -->
+  <div class="bg-brand-navy text-white text-xs md:text-sm py-2 px-4 border-b border-slate-700/50">
+    <div class="max-w-7xl mx-auto flex justify-between items-center">
+      <div class="flex items-center space-x-2">
+        <span class="inline-flex items-center px-2 py-0.5 rounded-full text-xs font-semibold bg-amber-500/20 text-amber-300 border border-amber-400/30 animate-pulse">
+          Admissions Open 2026-27
+        </span>
+        <span class="hidden sm:inline text-slate-300">Limited to 15 students per batch for individual attention</span>
+      </div>
+      <div class="flex items-center space-x-4 text-slate-300">
+        <a href="tel:+917851062121" class="hover:text-amber-400 flex items-center gap-1 font-medium">
+          <i class="fa-solid fa-phone text-xs text-amber-400"></i> +91 7851062121
+        </a>
+        <span class="hidden md:inline">|</span>
+        <span class="hidden md:inline text-xs text-slate-400"><i class="fa-solid fa-location-dot text-amber-400"></i> Mahesh Nagar, Jaipur</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main Navigation -->
+  <header class="sticky top-0 z-40 bg-white/95 backdrop-blur-md shadow-sm border-b border-slate-100">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-20">
+        <!-- Logo -->
+        <a href="#" class="flex items-center space-x-3">
+          <div class="w-12 h-12 bg-gradient-to-tr from-brand-maroon to-amber-600 rounded-xl flex items-center justify-center text-white font-bold text-2xl shadow-md shadow-amber-900/20">
+            S
+          </div>
+          <div>
+            <span class="text-2xl font-bold tracking-tight text-slate-900 leading-none block brand-font">SharpVE <span class="text-amber-600">Gurukull</span></span>
+            <span class="text-xs font-semibold text-slate-500 uppercase tracking-widest mt-0.5 block">Excellence in Mentorship • Est. 2015</span>
+          </div>
+        </a>
+
+        <!-- Desktop Navigation Links -->
+        <nav class="hidden md:flex items-center space-x-8 text-sm font-medium text-slate-600">
+          <a href="#about" class="hover:text-amber-600 transition">About Us</a>
+          <a href="#courses" class="hover:text-amber-600 transition">Courses</a>
+          <a href="#results" class="hover:text-amber-600 transition">Results & Toppers</a>
+          <a href="#methodology" class="hover:text-amber-600 transition">Methodology</a>
+          <a href="#contact" class="hover:text-amber-600 transition">Contact</a>
+        </nav>
+
+        <!-- Right Action Button -->
+        <div class="hidden sm:flex items-center space-x-3">
+          <a href="https://wa.me/917851062121?text=Hello%20SharpVE%20Gurukull,%20I%20want%20to%20inquire%20about%20admissions." target="_blank" class="inline-flex items-center gap-2 text-emerald-600 hover:text-emerald-700 bg-emerald-50 hover:bg-emerald-100 px-4 py-2.5 rounded-lg text-sm font-semibold transition border border-emerald-200">
+            <i class="fa-brands fa-whatsapp text-lg"></i> WhatsApp
+          </a>
+          <button onclick="openDemoModal()" class="inline-flex items-center justify-center bg-gradient-to-r from-amber-600 to-amber-700 hover:from-amber-700 hover:to-amber-800 text-white px-5 py-2.5 rounded-lg text-sm font-semibold shadow-md shadow-amber-600/20 transition transform active:scale-95">
+            Book Free Demo
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="relative bg-gradient-to-b from-slate-900 via-brand-navy to-slate-900 text-white py-16 md:py-24 overflow-hidden">
+    <div class="absolute inset-0 opacity-10 bg-[radial-gradient(#d97706_1px,transparent_1px)] [background-size:16px_16px]"></div>
+    
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        <!-- Hero Text -->
+        <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+          <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-amber-500/10 border border-amber-500/30 text-amber-300 text-xs sm:text-sm font-medium">
+            <i class="fa-solid fa-award text-amber-400"></i>
+            Jaipur's Trusted Academic Coaching Since 2015
+          </div>
+          
+          <h1 class="text-3xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight leading-tight">
+            Nurturing Concept Clarity, <br class="hidden sm:inline">
+            <span class="text-transparent bg-clip-text bg-gradient-to-r from-amber-400 via-amber-200 to-amber-400">Not Rote Learning.</span>
+          </h1>
+
+          <p class="text-base sm:text-lg text-slate-300 max-w-2xl mx-auto lg:mx-0 font-normal leading-relaxed">
+            Personalized coaching for <strong class="text-white">Classes 6th to 12th (CBSE & RBSE)</strong>. Specialized streams in <strong class="text-amber-300">Commerce & Science (PCM/PCB)</strong> with strict 15-student batch caps.
+          </p>
+
+          <!-- Quick Action Buttons -->
+          <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-2">
+            <button onclick="openDemoModal()" class="w-full sm:w-auto px-8 py-3.5 bg-amber-500 hover:bg-amber-600 text-slate-950 font-bold rounded-xl text-base shadow-lg shadow-amber-500/30 transition transform hover:-translate-y-0.5 flex items-center justify-center gap-2">
+              <span>Book 2-Day Free Demo Class</span>
+              <i class="fa-solid fa-arrow-right text-sm"></i>
+            </button>
+            <a href="tel:+917851062121" class="w-full sm:w-auto px-6 py-3.5 bg-slate-800/80 hover:bg-slate-700/80 text-white font-medium rounded-xl text-base border border-slate-700 transition flex items-center justify-center gap-2">
+              <i class="fa-solid fa-phone text-amber-400"></i>
+              <span>Call +91 7851062121</span>
+            </a>
+          </div>
+
+          <!-- Trust Badges -->
+          <div class="pt-6 border-t border-slate-800 grid grid-cols-3 gap-4 text-center lg:text-left">
+            <div>
+              <div class="text-2xl sm:text-3xl font-extrabold text-amber-400">10+ Yrs</div>
+              <div class="text-xs text-slate-400 uppercase tracking-wider mt-0.5">Jaipur Legacy</div>
+            </div>
+            <div>
+              <div class="text-2xl sm:text-3xl font-extrabold text-white">15 Max</div>
+              <div class="text-xs text-slate-400 uppercase tracking-wider mt-0.5">Students / Batch</div>
+            </div>
+            <div>
+              <div class="text-2xl sm:text-3xl font-extrabold text-amber-400">5.0 ★</div>
+              <div class="text-xs text-slate-400 uppercase tracking-wider mt-0.5">Google Rating</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hero Form Card -->
+        <div class="lg:col-span-5">
+          <div class="bg-white text-slate-900 rounded-2xl shadow-2xl p-6 sm:p-8 border border-slate-100 relative">
+            <div class="absolute -top-3 right-6 bg-gradient-to-r from-brand-maroon to-red-700 text-white text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider shadow">
+              Zero Obligation
+            </div>
+            
+            <h3 class="text-xl sm:text-2xl font-bold text-slate-900 mb-1">Book Free Demo Class</h3>
+            <p class="text-xs sm:text-sm text-slate-500 mb-6">Experience our teaching methodology before taking admission.</p>
+
+            <form onsubmit="handleDemoSubmit(event, 'hero')" class="space-y-4">
+              <div>
+                <label class="block text-xs font-semibold text-slate-700 uppercase mb-1">Student's Full Name</label>
+                <input type="text" id="hero-student-name" required placeholder="e.g. Rahul Sharma" class="w-full px-3.5 py-2.5 rounded-lg border border-slate-300 text-sm focus:ring-2 focus:ring-amber-500 focus:border-amber-500 outline-none transition">
+              </div>
+
+              <div class="grid grid-cols-2 gap-3">
+                <div>
+                  <label class="block text-xs font-semibold text-slate-700 uppercase mb-1">Class / Grade</label>
+                  <select id="hero-student-class" required class="w-full px-3 py-2.5 rounded-lg border border-slate-300 text-sm focus:ring-2 focus:ring-amber-500 outline-none bg-white">
+                    <option value="Class 6th-8th">Class 6th - 8th</option>
+                    <option value="Class 9th-10th">Class 9th - 10th</option>
+                    <option value="Class 11th Commerce">11th Commerce</option>
+                    <option value="Class 12th Commerce">12th Commerce</option>
+                    <option value="Class 11th Science">11th Science (PCM/B)</option>
+                    <option value="Class 12th Science">12th Science (PCM/B)</option>
+                  </select>
+                </div>
+                <div>
+                  <label class="block text-xs font-semibold text-slate-700 uppercase mb-1">Board</label>
+                  <select id="hero-student-board" required class="w-full px-3 py-2.5 rounded-lg border border-slate-300 text-sm focus:ring-2 focus:ring-amber-500 outline-none bg-white">
+                    <option value="CBSE">CBSE</option>
+                    <option value="RBSE">RBSE (Hindi/Eng)</option>
+                    <option value="ICSE">ICSE</option>
+                  </select>
+                </div>
+              </div>
+
+              <div>
+                <label class="block text-xs font-semibold text-slate-700 uppercase mb-1">Parent's WhatsApp Number</label>
+                <div class="relative">
+                  <span class="absolute inset-y-0 left-0 pl-3 flex items-center text-sm font-semibold text-slate-400">+91</span>
+                  <input type="tel" id="hero-parent-phone" required pattern="[0-9]{10}" placeholder="9876543210" class="w-full pl-12 pr-3.5 py-2.5 rounded-lg border border-slate-300 text-sm focus:ring-2 focus:ring-amber-500 focus:border-amber-500 outline-none transition">
+                </div>
+              </div>
+
+              <button type="submit" class="w-full py-3.5 bg-gradient-to-r from-amber-600 to-amber-700 hover:from-amber-700 hover:to-amber-800 text-white font-bold rounded-lg text-sm shadow-md shadow-amber-600/30 transition flex items-center justify-center gap-2">
+                <i class="fa-brands fa-whatsapp text-lg"></i>
+                <span>Confirm & Send on WhatsApp</span>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Courses Section with Dynamic Tabs -->
+  <section id="courses" class="py-16 md:py-24 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-3xl mx-auto mb-12">
+        <span class="text-xs font-bold text-amber-600 uppercase tracking-widest bg-amber-50 px-3 py-1 rounded-full border border-amber-200">Structured Batches</span>
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 mt-3">Targeted Programs for Board Excellence</h2>
+        <p class="text-slate-600 text-sm sm:text-base mt-2">Every program is delivered in small groups with tailored weekly test series and doubt resolution.</p>
+
+        <!-- Course Tabs -->
+        <div class="flex flex-wrap justify-center gap-2 mt-8">
+          <button onclick="switchTab('all')" id="tab-all" class="tab-btn px-4 py-2 text-sm font-semibold rounded-lg bg-slate-900 text-white transition">All Batches</button>
+          <button onclick="switchTab('foundation')" id="tab-foundation" class="tab-btn px-4 py-2 text-sm font-semibold rounded-lg bg-slate-100 text-slate-600 hover:bg-slate-200 transition">Classes 6th - 8th</button>
+          <button onclick="switchTab('secondary')" id="tab-secondary" class="tab-btn px-4 py-2 text-sm font-semibold rounded-lg bg-slate-100 text-slate-600 hover:bg-slate-200 transition">Classes 9th - 10th</button>
+          <button onclick="switchTab('commerce')" id="tab-commerce" class="tab-btn px-4 py-2 text-sm font-semibold rounded-lg bg-slate-100 text-slate-600 hover:bg-slate-200 transition">11th-12th Commerce</button>
+          <button onclick="switchTab('science')" id="tab-science" class="tab-btn px-4 py-2 text-sm font-semibold rounded-lg bg-slate-100 text-slate-600 hover:bg-slate-200 transition">11th-12th Science (PCM/B)</button>
+        </div>
+      </div>
+
+      <!-- Course Cards Grid -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        
+        <!-- Card 1: Foundation -->
+        <div class="course-card foundation bg-slate-50 rounded-2xl p-6 border border-slate-200/80 hover:shadow-lg transition flex flex-col justify-between">
+          <div>
+            <div class="flex justify-between items-start mb-4">
+              <span class="bg-blue-100 text-blue-800 text-xs font-bold px-3 py-1 rounded-md">Junior Wings</span>
+              <span class="text-xs font-semibold text-slate-500">CBSE & RBSE</span>
+            </div>
+            <h3 class="text-xl font-bold text-slate-900 mb-2">Foundation Mastery (Classes 6-8)</h3>
+            <p class="text-xs text-slate-600 mb-4 leading-relaxed">Early grooming in mathematical problem solving, scientific inquiry, and English language fluency to build school toppers early.</p>
+            <ul class="text-xs space-y-2 text-slate-700 mb-6">
+              <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-500"></i> Mathematics & Mental Ability</li>
+              <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-500"></i> General Science Concepts</li>
+              <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-500"></i> English Grammar & Reading</li>
+              <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-500"></i> Weekly Saturday revision tests</li>
+            </ul>
+          </div>
+          <button onclick="openDemoModal('Foundation (Class 6-8)')" class="w-full py-2.5 bg-white border border-slate-300 hover:border-amber-600 hover:text-amber-600 font-semibold rounded-lg text-xs transition">Enquire for Batch</button>
+        </div>
+
+        <!-- Card 2: Secondary Board -->
+        <div class="course-card secondary bg-slate-50 rounded-2xl p-6 border border-slate-200/80 hover:shadow-lg transition flex flex-col justify-between">
+          <div>
+            <div class="flex justify-between items-start mb-4">
+              <span class="bg-amber-100 text-amber-800 text-xs font-bold px-3 py-1 rounded-md">Board Special</span>
+              <span class="text-xs font-semibold text-slate-500">CBSE & RBSE</span>
+            </div>
+            <h3 class="text-xl font-bold text-slate-900 mb-2">Secondary Board Prep (Classes 9-10)</h3>
+            <p class="text-xs text-slate-600 mb-4 leading-relaxed">Rigorous NCERT mastery, past 10-year question bank analysis, and mock board exam simulations for 90%+ target scores.</p>
+            <ul class="text-xs space-y-2 text-slate-700 mb-6">
+              <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-500"></i> Standard & Basic Mathematics</li>
+              <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-500"></i> Physics, Chemistry & Biology</li>
+              <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-500"></i> Social Science Key Points & Maps</li>
+              <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-500"></i> Bi-weekly Board Pattern Mock Exams</li>
+            </ul>
+          </div>
+          <button onclick="openDemoModal('Secondary (Class 9-10)')" class="w-full py-2.5 bg-white border border-slate-300 hover:border-amber-600 hover:text-amber-600 font-semibold rounded-lg text-xs transition">Enquire for Batch</button>
+        </div>
+
+        <!-- Card 3: Senior Commerce -->
+        <div class="course-card commerce bg-slate-50 rounded-2xl p-6 border border-slate-200/80 hover:shadow-lg transition flex flex-col justify-between">
+          <div>
+            <div class="flex justify-between items-start mb-4">
+              <span class="bg-emerald-100 text-emerald-800 text-xs font-bold px-3 py-1 rounded-md">Institute Flagship</span>
+              <span class="text-xs font-semibold text-slate-500">Class 11 & 12</span>
+            </div>
+            <h3 class="text-xl font-bold text-slate-900 mb-2">Commerce Super 15 (Class 11 & 12)</h3>
+            <p class="text-xs text-slate-600 mb-4 leading-relaxed">Specialized mentorship by experienced faculty in core accounts, micro/macro economics, and business studies.</p>
+            <ul class="text-xs space-y-2 text-slate-700 mb-6">
+              <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-500"></i> Accountancy (Concepts + Practical)</li>
+              <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-500"></i> Economics & Applied Mathematics</li>
+              <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-500"></i> Business Studies Answer Writing</li>
+              <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-500"></i> Dedicated CUET Foundation Prep</li>
+            </ul>
+          </div>
+          <button onclick="openDemoModal('Commerce (11-12)')" class="w-full py-2.5 bg-white border border-slate-300 hover:border-amber-600 hover:text-amber-600 font-semibold rounded-lg text-xs transition">Enquire for Batch</button>
+        </div>
+
+        <!-- Card 4: Senior Science -->
+        <div class="course-card science bg-slate-50 rounded-2xl p-6 border border-slate-200/80 hover:shadow-lg transition flex flex-col justify-between">
+          <div>
+            <div class="flex justify-between items-start mb-4">
+              <span class="bg-purple-100 text-purple-800 text-xs font-bold px-3 py-1 rounded-md">Science Stream</span>
+              <span class="text-xs font-semibold text-slate-500">Class 11 & 12</span>
+            </div>
+            <h3 class="text-xl font-bold text-slate-900 mb-2">Science PCM & PCB (Class 11 & 12)</h3>
+            <p class="text-xs text-slate-600 mb-4 leading-relaxed">Conceptual clarity in numerical problems and theory for school board excellence and competitive foundations.</p>
+            <ul class="text-xs space-y-2 text-slate-700 mb-6">
+              <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-500"></i> Physics Numerical Workshops</li>
+              <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-500"></i> Organic & Physical Chemistry</li>
+              <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-500"></i> Mathematics / Biology Deep Dives</li>
+              <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-500"></i> Doubt counter support every evening</li>
+            </ul>
+          </div>
+          <button onclick="openDemoModal('Science PCM/PCB (11-12)')" class="w-full py-2.5 bg-white border border-slate-300 hover:border-amber-600 hover:text-amber-600 font-semibold rounded-lg text-xs transition">Enquire for Batch</button>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Methodology & Why Us -->
+  <section id="methodology" class="py-16 bg-slate-100">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-2xl mx-auto mb-12">
+        <h2 class="text-3xl font-bold text-slate-900">Why Parents in Jaipur Choose SharpVE Gurukull</h2>
+        <p class="text-sm text-slate-600 mt-2">We don't teach crowds. We mentor individuals.</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
+        <div class="bg-white p-6 rounded-xl border border-slate-200 text-center">
+          <div class="w-12 h-12 bg-amber-50 text-amber-600 rounded-xl flex items-center justify-center text-xl mx-auto mb-4">
+            <i class="fa-solid fa-users-line"></i>
+          </div>
+          <h4 class="font-bold text-slate-900 text-base mb-2">15 Students Batch Limit</h4>
+          <p class="text-xs text-slate-600 leading-relaxed">No crowded halls. Teachers know every student's strengths and weak areas personally.</p>
+        </div>
+
+        <div class="bg-white p-6 rounded-xl border border-slate-200 text-center">
+          <div class="w-12 h-12 bg-blue-50 text-blue-600 rounded-xl flex items-center justify-center text-xl mx-auto mb-4">
+            <i class="fa-solid fa-clipboard-check"></i>
+          </div>
+          <h4 class="font-bold text-slate-900 text-base mb-2">Weekly Test System</h4>
+          <p class="text-xs text-slate-600 leading-relaxed">Standardized weekly unit tests with report cards shared directly with parents via WhatsApp.</p>
+        </div>
+
+        <div class="bg-white p-6 rounded-xl border border-slate-200 text-center">
+          <div class="w-12 h-12 bg-emerald-50 text-emerald-600 rounded-xl flex items-center justify-center text-xl mx-auto mb-4">
+            <i class="fa-solid fa-comments"></i>
+          </div>
+          <h4 class="font-bold text-slate-900 text-base mb-2">1-on-1 Doubt Sessions</h4>
+          <p class="text-xs text-slate-600 leading-relaxed">Dedicated faculty time before and after classes to solve every question until fully understood.</p>
+        </div>
+
+        <div class="bg-white p-6 rounded-xl border border-slate-200 text-center">
+          <div class="w-12 h-12 bg-purple-50 text-purple-600 rounded-xl flex items-center justify-center text-xl mx-auto mb-4">
+            <i class="fa-solid fa-award"></i>
+          </div>
+          <h4 class="font-bold text-slate-900 text-base mb-2">Proven Track Record</h4>
+          <p class="text-xs text-slate-600 leading-relaxed">A decade of consistent 90%+ board results in both CBSE and RBSE exams in Jaipur.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Location & Contact Section -->
+  <section id="contact" class="py-16 md:py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-10">
+        
+        <!-- Info Column -->
+        <div class="lg:col-span-5 space-y-6">
+          <div>
+            <span class="text-xs font-bold text-amber-600 uppercase tracking-widest">Visit Our Campus</span>
+            <h2 class="text-3xl font-extrabold text-slate-900 mt-1">SharpVE Gurukull, Jaipur</h2>
+            <p class="text-slate-600 text-sm mt-2">Centrally located and easily accessible for students in Mahesh Nagar, Gopalpura Bypass, and Tonk Phatak.</p>
+          </div>
+
+          <div class="space-y-4">
+            <div class="flex items-start gap-4">
+              <div class="w-10 h-10 rounded-lg bg-amber-50 text-amber-600 flex items-center justify-center shrink-0">
+                <i class="fa-solid fa-location-dot"></i>
+              </div>
+              <div>
+                <h4 class="font-bold text-slate-900 text-sm">Campus Address</h4>
+                <p class="text-xs text-slate-600 mt-0.5">Mahesh Nagar, Gopal Pura Mode / Bypass, Jaipur, Rajasthan 302015</p>
+              </div>
+            </div>
+
+            <div class="flex items-start gap-4">
+              <div class="w-10 h-10 rounded-lg bg-emerald-50 text-emerald-600 flex items-center justify-center shrink-0">
+                <i class="fa-solid fa-phone"></i>
+              </div>
+              <div>
+                <h4 class="font-bold text-slate-900 text-sm">Direct Contact & WhatsApp</h4>
+                <a href="tel:+917851062121" class="text-xs text-slate-700 hover:text-amber-600 font-medium block mt-0.5">+91 7851062121</a>
+                <span class="text-[11px] text-slate-500">Available Mon - Sat (8:00 AM - 8:00 PM)</span>
+              </div>
+            </div>
+
+            <div class="flex items-start gap-4">
+              <div class="w-10 h-10 rounded-lg bg-blue-50 text-blue-600 flex items-center justify-center shrink-0">
+                <i class="fa-solid fa-envelope"></i>
+              </div>
+              <div>
+                <h4 class="font-bold text-slate-900 text-sm">Email</h4>
+                <a href="mailto:sharpvegurukull@gmail.com" class="text-xs text-slate-700 hover:text-amber-600 font-medium block mt-0.5">sharpvegurukull@gmail.com</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="pt-4 flex flex-col sm:flex-row gap-3">
+            <a href="https://wa.me/917851062121?text=Hello%20SharpVE%20Gurukull,%20I%20would%20like%20to%20visit%20the%20campus." target="_blank" class="px-5 py-3 bg-emerald-600 hover:bg-emerald-700 text-white font-semibold rounded-lg text-sm transition flex items-center justify-center gap-2">
+              <i class="fa-brands fa-whatsapp text-lg"></i>
+              <span>Chat on WhatsApp</span>
+            </a>
+            <a href="tel:+917851062121" class="px-5 py-3 bg-slate-900 hover:bg-slate-800 text-white font-semibold rounded-lg text-sm transition flex items-center justify-center gap-2">
+              <i class="fa-solid fa-phone"></i>
+              <span>Call Now</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Google Maps Embed Column -->
+        <div class="lg:col-span-7 bg-slate-100 rounded-2xl overflow-hidden border border-slate-200 shadow-sm min-h-[350px]">
+          <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14234.672900720448!2d75.778887!3d26.882208!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x396db44199999999%3A0x1111111111111111!2sMahesh%20Nagar%2C%20Jaipur!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin" 
+            width="100%" 
+            height="100%" 
+            style="border:0; min-height: 380px;" 
+            allowfullscreen="" 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-slate-950 text-slate-400 py-10 border-t border-slate-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-xs space-y-2">
+      <p class="font-semibold text-slate-200">SharpVE Gurukull • Established 2015</p>
+      <p>Coaching Classes 6th-12th (CBSE & RBSE) | Commerce & Science | Mahesh Nagar, Jaipur, Rajasthan</p>
+      <p class="text-slate-500 pt-4">© 2026 SharpVE Gurukull. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Floating WhatsApp Button (Desktop & Tablet) -->
+  <a href="https://wa.me/917851062121?text=Hello%20SharpVE%20Gurukull,%20I%20want%20to%20know%20more%20about%20admissions." target="_blank" class="fixed bottom-6 right-6 z-50 bg-emerald-500 hover:bg-emerald-600 text-white w-14 h-14 rounded-full flex items-center justify-center text-2xl shadow-xl shadow-emerald-500/40 transition transform hover:scale-110 active:scale-95 hidden md:flex">
+    <i class="fa-brands fa-whatsapp"></i>
+  </a>
+
+  <!-- Mobile Bottom Sticky Bar -->
+  <div class="fixed bottom-0 inset-x-0 bg-white border-t border-slate-200 p-2.5 z-50 flex items-center justify-between gap-2 md:hidden shadow-lg">
+    <a href="tel:+917851062121" class="flex-1 py-2.5 bg-slate-900 text-white rounded-lg text-xs font-bold flex items-center justify-center gap-1.5">
+      <i class="fa-solid fa-phone text-amber-400"></i> Call
+    </a>
+    <a href="
